@@ -1,5 +1,5 @@
 //-------Boton de Encriptar-------//
-btnEncriptar.addEventListener("click", e=>{
+btn-encriptar.addEventListener("click", e=>{
     e.preventDefault();
     let texto = txtEncriptar.value;
     let txt = texto.normalize("NFD").replace(/[$\.¿\?~!\¡@#%^&*()_|}\{[\]>\<:"`;,\u0300-\u036f']/g, "");
