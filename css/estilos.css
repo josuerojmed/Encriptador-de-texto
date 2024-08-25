@@ -57,7 +57,9 @@ header .logo{
     height: 48px;
 }
 
-
+/*---------------
+Principal
+----------------*/
 main{
     display: flex;
     flex-direction: row;
@@ -277,9 +279,9 @@ footer{
     opacity: 0.6;
 }
 
-/*--------
+/*---------------
 Media
---------*/
+----------------*/
 @media(max-width: 1250px){
     main{
         display: flex;
