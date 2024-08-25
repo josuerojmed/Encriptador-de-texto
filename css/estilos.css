@@ -73,7 +73,6 @@ main {
     main {
         background-size: contain; /* Ajusta la imagen para que se ajuste al contenedor sin recortarse */
         background-position: top center; /* Ajusta la posición según tus necesidades */
-    }
 }
 
 
@@ -175,7 +174,8 @@ main {
     color: var(--Medium-Blue);
 }
 
-.tarjeta{
+/* Estilo base para la tarjeta */
+.tarjeta {
     width: 270px;
     height: 580px;
     background: var(--Font);
@@ -186,12 +186,27 @@ main {
     text-align: center;
 }
 
-.tarjeta-contenedor{
+/* Estilo base para el contenedor de la tarjeta */
+.tarjeta-contenedor {
     width: 250px;
     margin: auto;
     margin-top: 50%;
     background: var(--Font);
 }
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 768px) {
+    .tarjeta {
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        height: auto; /* Permite que la altura sea automática para adaptarse al contenido */
+        margin-top: 20px; /* Reduce el margen superior */
+        border-radius: 16px; /* Reduce el radio del borde */
+    }
+
+    .tarjeta-contenedor {
+        width: 90%; /* Ajusta el ancho al 90% del contenedor */
+        margin-top: 30%; /* Ajusta
+
 
 .img-Gengar{
     background: var(--Font);
