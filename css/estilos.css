@@ -60,13 +60,22 @@ header .logo{
 /*---------------
 Principal
 ----------------*/
-main{
+main {
     display: flex;
     flex-direction: row;
     background: url(../imagenes/portada_gengar_final_pro.png) no-repeat;
     background-size: cover;
     background-position: center;
 }
+
+/* Ajuste para dispositivos con pantallas más pequeñas */
+@media (max-width: 768px) { /* Puedes ajustar el tamaño según tus necesidades */
+    main {
+        background-size: contain; /* Ajusta la imagen para que se ajuste al contenedor sin recortarse */
+        background-position: top center; /* Ajusta la posición según tus necesidades */
+    }
+}
+
 
 .encriptador{
     width: 60%;
