@@ -1,7 +1,7 @@
 //-------Boton de Encriptar-------//
 btn-encriptar.addEventListener("click", e=>{
     e.preventDefault();
-    let texto = document.querySelector(.encriptar").value;
+    let texto = document.querySelector(".encriptar").value;
     let txt = texto.normalize("NFD").replace(/[$\.¿\?~!\¡@#%^&*()_|}\{[\]>\<:"`;,\u0300-\u036f']/g, "");
     
     if(texto == ""){
